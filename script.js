@@ -41,6 +41,7 @@ async function getJokes() {
         }else{
             joke = singleJoke.joke;
         }
+        jokeText.textContent = joke;
         tellJoke(joke);
     } catch (error) {
         console.log("Something Wrong", error)
